@@ -1,0 +1,74 @@
+<html>
+    <head><title>
+        Java script
+    </title></head>
+    <body>
+        <h2>Java Script</h2>
+        <ol>
+            <li>Array, sort, reverse, pop, sort</li>
+            <li>string split, concat, join</li>
+        </ol>
+        <p><b>vide console</b></p>
+        <script>
+            console.log('teste');
+            // Array
+            // let variavel = [valor1, valor2, valor3];
+
+            let times = ['Sao Paulo', 'Palmeiras', 'Flamengo', 'Fluminese'];
+            console.log(times);
+            let pos = 0
+            console.log(`posicao: ${pos} - ` + times[pos]);
+            console.log('---')
+            // array2
+            let times2 = [];
+            times2[0] = "Sao Paulo";
+            times2[1] = "Palmeiras";
+            times2[2] = 'Flamengo';
+            times2[3] = 'Fluminense';
+            times2[4] = 'Botafogo';
+            times2[4] = 'Vasco';
+            times2[4] = 'Santos';
+            console.log(times2);
+            console.log(times2[0]);
+
+            for(let i=0;i< times2.length; i++){
+                console.log(`Indice ${i}, Conteudo: ${times2[i]}`);
+            }
+
+            console.log('---')
+
+            for(let time of times2) {
+                console.log(`Conteudo: ${time} `);
+            }
+
+            console.log('---')
+
+            let i1 = times2.indexOf('Internacional');
+            let i2 = times2.indexOf('Fluminense');
+
+            console.log(`Internacional: ${i1}`);
+            console.log(`Fluminense: ${i2}`);
+
+            console.log('---')
+            console.log(`Lista Inicial: ${times2}`);
+
+            times2.push("Gremio");
+            times2.push('Cruzeiro');
+            console.log(`Adicionando Gremio e Cruzeiro`);
+
+            times2.pop();
+            console.log(`Removido o ultimo do Array ${times2}`);
+            console.log('---');
+            console.log(`Ordenacao Original: ${times2}`);
+
+            times2.reverse();
+            console.log(`Lista ordenada invertida: ${times2}`)
+
+            times2.sort();
+            console.log(`Lista ordenada: ${times2}`)
+
+            times2.reverse();
+            console.log(`Lista ordenada invertida: ${times2}`)
+        </script>
+    </body>
+</html>
